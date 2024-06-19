@@ -4,12 +4,12 @@ import "./Navbar.css";
 
 export function NavBar() {
     return (
-        <nav className="navbar-container">
+        <nav className="navbarContainer">
             <img src={logo} alt="Logo" />
             <div className="navbarItemsRight">
-                <NavLink to="/"><span className="navbarItem">Home</span></NavLink>
-                <NavLink to="/random"><span className="navbarItem">Random brewery</span></NavLink>
-                <NavLink to="/favorites"><span className="navbarItem">Favorites</span></NavLink>
+                <NavLink to="/" className="navbarLink"><span className="navbarItem">Home</span></NavLink>
+                <NavLink to="/random" className="navbarLink"><span className="navbarItem">Random brewery</span></NavLink>
+                <NavLink to="/favorites" className="navbarLink"><span className="navbarItem">Favorites</span></NavLink>
             </div>
         </nav>
     );

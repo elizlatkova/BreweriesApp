@@ -1,0 +1,17 @@
+.breweryContainer {
+    padding: 1em;
+    background-color: #cacaca;
+}
+
+.breweryContainer:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+.breweryName {
+    color: #254397;
+}
+
+.breweryDescription {
+    margin-left: 2em;
+    font-size: 16px;
+}
