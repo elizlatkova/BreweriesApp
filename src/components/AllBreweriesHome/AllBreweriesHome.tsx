@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import BreweryInterface from "../BreweryCard/BreweryCard";
 
-export function AllBrieweriesHome(breweryName: string, country: string, city: string) {
+export default function AllBrieweriesHome() {
     const [breweries, setBreweries] = useState([]);
     useEffect(() => {
         fetch('https://api.openbrewerydb.org/v1/breweries?fbclid=IwZXh0bgNhZW0CMTAAAR1QKdPcqOwBI51QmYcnitDSFfKOnHlOLDSbxXadLJZgJJWfQ797QPTltHA_aem_ZmFrZWR1bW15MTZieXRlcw')
@@ -17,11 +17,7 @@ export function AllBrieweriesHome(breweryName: string, country: string, city: st
     return (
         <div className="allBrieweriesHome">
             <div className="allBreweries">
-                {breweries.map(br => <BreweryInterface brewery={{
-                    breweryName: br.name,
-                    country: br.country,
-                    city: br.city
-                }} />)}
+                {breweries.map((brewery:Object) => <BreweryInterface brewery={brewery} />)}
             </div>
         </div>
     );

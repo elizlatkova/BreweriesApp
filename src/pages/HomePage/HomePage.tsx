@@ -1,4 +1,4 @@
-import { AllBreweriesHome } from "../../components/AllBreweriesHome/AllBreweriesHome";
+import AllBreweriesHome from "../../components/AllBreweriesHome/AllBreweriesHome";
 import "./HomePage.css"
 
 export function HomePage() {
@@ -7,7 +7,6 @@ export function HomePage() {
             <h1 className="homePageTitle">Breweries</h1>
             <hr />
             <AllBreweriesHome />
-            
         </>
     );
 }
