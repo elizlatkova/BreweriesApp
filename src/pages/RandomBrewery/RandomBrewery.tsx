@@ -1,10 +1,12 @@
+import "./RandomBrewery.css"
+
 export function RandomBrewery() {
     return (
         <>
-            <h1>Random brewery generator</h1>
+            <h1 className="randomPageTitle">Random brewery generator</h1>
             <hr/>
             <div className="randomBrewery"></div>
-            <button>Generate new brewery</button>
+            <button className="btnGenerateRandomBrewery">Generate new brewery</button>
         </>
     );
 }
