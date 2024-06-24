@@ -9,7 +9,6 @@ export default function AllBrieweriesHome() {
                 return res.json();
             })
             .then((data) => {
-                console.log(data);
                 setBreweries(data);
             });
     }, []);

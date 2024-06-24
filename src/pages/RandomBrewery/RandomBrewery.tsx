@@ -3,10 +3,10 @@ import "./RandomBrewery.css"
 export function RandomBrewery() {
     return (
         <>
-            <h1 className="randomPageTitle">Random brewery generator</h1>
+            <h1 className="random-page-title">Random brewery generator</h1>
             <hr/>
-            <div className="randomBrewery"></div>
-            <button className="btnGenerateRandomBrewery">Generate new brewery</button>
+            <div className="random-brewery"></div>
+            <button className="btn-generate-random-brewery">Generate new brewery</button>
         </>
     );
 }

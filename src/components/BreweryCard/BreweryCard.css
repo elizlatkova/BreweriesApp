@@ -1,17 +1,18 @@
-.breweryContainer {
+.brewery-container {
     padding: 1em;
+    border-bottom: 6px solid #fafafa;
     background-color: #cacaca;
+    background-image: linear-gradient(to bottom right, #7185bb, #cacaca, #fff6ed, #ececec, #dfe8ff, #ffffff);
 }
 
-.breweryContainer:nth-child(odd) {
-    background-color: #e6e6e6;
-}
-
-.breweryName {
+.brewery-name {
+    font-size: 20px;
     color: #254397;
+    text-align: center;
+    font-weight: 100;
 }
 
-.breweryDescription {
+.brewery-description {
     margin-left: 2em;
     font-size: 16px;
 }

@@ -1,10 +1,10 @@
-.randomPageTitle {
+.random-page-title {
     font-size: 28px;
     font-weight: normal;
     text-align: center;
 }
 
-.btnGenerateRandomBrewery {
+.btn-generate-random-brewery {
     border-radius: 8px;
     padding: 8px 14px;
     font-size: 1em;
@@ -15,7 +15,7 @@
     border: 1px solid #5e5e5e;
 }
 
-.btnGenerateRandomBrewery:hover {
+.btn-generate-random-brewery:hover {
     border-width: 2px;
     padding: 7px 13px;
 }

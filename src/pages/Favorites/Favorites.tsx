@@ -3,9 +3,9 @@ import "./Favorites.css"
 export function Favorites() {
     return (
         <>
-            <h1 className="favoritesPageTitle">My favorite breweries</h1>
+            <h1 className="favorites-page-title">My favorite breweries</h1>
             <hr/>
-            <div className="favoriteBreweries"></div>
+            <div className="favorite-breweries"></div>
         </>
     );
 }
