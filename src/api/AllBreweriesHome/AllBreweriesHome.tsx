@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import BreweryInterface from "../BreweryCard/BreweryCard";
+import BreweryInterface from "../../components/BreweryCard/BreweryCard";
 
 export default function AllBrieweriesHome() {
     const [breweries, setBreweries] = useState([]);
@@ -14,8 +14,8 @@ export default function AllBrieweriesHome() {
     }, []);
 
     return (
-        <div className="allBrieweriesHome">
-            <div className="allBreweries">
+        <div className="all-brieweriesHome">
+            <div className="all-breweries">
                 {breweries.map((brewery:Object) => <BreweryInterface brewery={brewery} />)}
             </div>
         </div>

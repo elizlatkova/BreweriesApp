@@ -1,4 +1,4 @@
-import AllBreweriesHome from "../../components/AllBreweriesHome/AllBreweriesHome";
+import AllBreweriesHome from "../../api/AllBreweriesHome/AllBreweriesHome";
 import "./HomePage.css"
 
 export function HomePage() {
