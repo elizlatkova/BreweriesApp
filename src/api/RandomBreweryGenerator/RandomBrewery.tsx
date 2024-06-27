@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import BreweryCard from "../../components/BreweryCard/BreweryCard";
+import BreweryCardFullInformation from "../../components/BreweryCardFullInformation/BreweryCardFullInformation";
 
-export default function AllBrieweriesHome() {
+export default function RandomBrewery() {
     const [breweries, setBreweries] = useState([]);
     useEffect(() => {
-        fetch('https://api.openbrewerydb.org/v1/breweries?fbclid=IwZXh0bgNhZW0CMTAAAR1QKdPcqOwBI51QmYcnitDSFfKOnHlOLDSbxXadLJZgJJWfQ797QPTltHA_aem_ZmFrZWR1bW15MTZieXRlcw')
+        fetch('https://api.openbrewerydb.org/v1/breweries/random')
             .then((res) => {
                 return res.json();
             })
@@ -16,7 +16,7 @@ export default function AllBrieweriesHome() {
     return (
         <div className="all-brieweriesHome">
             <div className="all-breweries">
-                {breweries.map((brewery:Object) => <BreweryCard brewery={brewery} />)}
+                {breweries.map((brewery:Object) => <BreweryCardFullInformation brewery={brewery} />)}
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import "./BreweryCard.css";
 import "../../types/brewey"
 
-export default function BrieweryInterface({brewery}:{brewery:any}) {
+export default function BrieweryCard({brewery}:{brewery:any}) {
     return (
         <div className="brewery-container">
             <h2 className="brewery-name">{brewery.name}</h2>
