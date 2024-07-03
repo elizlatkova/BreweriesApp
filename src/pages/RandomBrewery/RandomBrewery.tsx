@@ -1,5 +1,5 @@
 import "./RandomBrewery.css"
-import RandomBreweryGenerator from "../../api/RandomBreweryGenerator/RandomBreweryGenerator";
+import RandomBreweryGenerator from "../../components/RandomBreweryGenerator/RandomBreweryGenerator";
 
 export function RandomBrewery() {
     return (
