@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import BreweryCardFullInformation from "../../components/BreweryCardFullInformation/BreweryCardFullInformation";
+import { Brewery } from "../../types/brewery";
 
 export default function RandomBrewery() {
     const [breweries, setBreweries] = useState([]);
@@ -16,7 +17,7 @@ export default function RandomBrewery() {
     return (
         <div className="all-brieweriesHome">
             <div className="all-breweries">
-                {breweries.map((brewery:Object) => <BreweryCardFullInformation brewery={brewery} />)}
+                {breweries.map((brewery:Brewery) => <BreweryCardFullInformation brewery={brewery} />)}
             </div>
         </div>
     );

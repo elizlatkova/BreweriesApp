@@ -15,6 +15,11 @@
     border: 1px solid #5e5e5e;
 }
 
+.btn-new-brewery {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .btn-generate-random-brewery:hover {
     border-width: 2px;
     padding: 7px 13px;

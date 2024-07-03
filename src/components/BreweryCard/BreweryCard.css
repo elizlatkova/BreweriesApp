@@ -16,3 +16,22 @@
     margin-left: 2em;
     font-size: 16px;
 }
+
+.div-btn-brewery-card {
+    text-align: center;
+}
+
+.btn-brewery-card {
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    border: 1px solid #5e5e5e;
+}
+
+.btn-brewery-card:hover {
+    border-width: 2px;
+    padding: 4px 13px;
+}
