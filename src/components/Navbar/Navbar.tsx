@@ -7,7 +7,7 @@ export function NavBar() {
         <nav className="navbar-container">
             <img src={logo} alt="Logo" />
             <div className="navbar-items-right">
-                <NavLink to="/" className="navbar-link"><span className="navbar-item">Home</span></NavLink>
+                <NavLink to="/home" className="navbar-link"><span className="navbar-item">Home</span></NavLink>
                 <NavLink to="/random" className="navbar-link"><span className="navbar-item">Random brewery</span></NavLink>
                 <NavLink to="/favorites" className="navbar-link"><span className="navbar-item">Favorites</span></NavLink>
             </div>
