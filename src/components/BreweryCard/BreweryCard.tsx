@@ -1,17 +1,24 @@
 import "./BreweryCard.css";
-import "../../types/brewey"
+import { Brewery } from "../../types/brewery";
 
-export default function BrieweryInterface({brewery}:{brewery:any}) {
-    return (
-        <div className="brewery-container">
-            <h2 className="brewery-name">{brewery.name}</h2>
-            <p className="brewery-description">
-                <b>Type:</b> {brewery.brewery_type}
-                <br />
-                <b>Country:</b> {brewery.country}
-                <br />
-                <b>City:</b> {brewery.city}
-            </p>
-        </div>
-    );
+type BreweryCardProps = {
+  brewery: Brewery;
+};
+
+export default function BreweryCard({ brewery }: BreweryCardProps) {
+  return (
+    <div className="brewery-container">
+      <h2 className="brewery-name">{brewery.name}</h2>
+      <p className="brewery-description">
+        <b>Type:</b> {brewery.brewery_type}
+        <br />
+        <b>Country:</b> {brewery.country}
+        <br />
+        <b>City:</b> {brewery.city}
+      </p>
+      <div className="div-btn-brewery-card">
+        <button className="btn-brewery-card">Full information</button>
+      </div>
+    </div>
+  );
 }
