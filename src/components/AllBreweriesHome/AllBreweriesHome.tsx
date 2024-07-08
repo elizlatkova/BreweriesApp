@@ -11,7 +11,7 @@ export default function AllBrieweriesHome() {
     const res = fetchData();
     console.log("RES", res);
 
-    // setBreweries(res);
+    setBreweries(res);
   }, []);
 
   return (
