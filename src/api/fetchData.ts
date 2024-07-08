@@ -1,7 +1,7 @@
 import { URL_ALL_DATA } from "./constants";
 
 // functions are always with lower case
-export function FetchData() {
+export function fetchData() {
   //  use async/await
   fetch(URL_ALL_DATA)
     .then((res) => {

@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import BreweryCard from "../BreweryCard/BreweryCard";
-import { Brewery } from "../../types/brewery";
-import { FetchData } from "../../api/fetchData";
+import { Brewery } from "../../types/brewey";
+import { fetchData } from "../../api/fetchData";
 
 export default function AllBrieweriesHome() {
   const [breweries, setBreweries] = useState<Brewery[]>([]);
   // create a constants file and put it there
 
   useEffect(() => {
-    const res = FetchData();
+    const res = fetchData();
     console.log("RES", res);
 
     // setBreweries(res);
