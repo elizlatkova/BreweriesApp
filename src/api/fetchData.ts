@@ -1,8 +1,10 @@
 import { Brewery } from "../types/brewey";
 import { URL_ALL_DATA } from "./constants";
 
+
+
 // functions are always with lower case
-export async function fetchData(): Promise<Brewery> {
+export async function fetchData(): Promise<Brewery[]>{
     //  use async/await
     try {
         const res = await fetch(URL_ALL_DATA);
