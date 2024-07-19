@@ -4,6 +4,11 @@ import { Brewery } from "../../types/brewery";
 type BreweryCardProps = {
   brewery: Brewery;
 };
+import { Brewery } from "../../types/brewery";
+
+type BreweryCardProps = {
+  brewery: Brewery;
+};
 
 export default function BreweryCard({ brewery }: BreweryCardProps) {
   return (

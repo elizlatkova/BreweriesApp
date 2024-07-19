@@ -1,12 +1,24 @@
+import { Brewery } from "../types/brewery";
 import { URL_ALL_DATA } from "./constants";
 
+
+
 // functions are always with lower case
-export function FetchData() {
-  //  use async/await
-  fetch(URL_ALL_DATA)
-    .then((res) => {
-      console.log("RES 1", res);
-      return res.json();
-    })
-    .catch((err: any) => console.log(err.message));
+export async function fetchData(): Promise<Brewery[]>{
+    //  use async/await
+    try {
+        const res = await fetch(URL_ALL_DATA);
+        if (!res.ok) {
+            throw new Error(
+                `Response status: ${res.status}`
+            );
+        }
+        const json = await res.json();
+        console.log(`JSON`,json);
+        return json
+        
+    } catch (error) {
+        console.error(`Failed to fetch data: `, error);
+        return Promise.reject(error)
+    }
 }
