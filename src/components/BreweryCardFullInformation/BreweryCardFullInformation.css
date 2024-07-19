@@ -1,0 +1,18 @@
+.brewery-container {
+    padding: 1em;
+    border-bottom: 6px solid #fafafa;
+    background-color: #cacaca;
+    background-image: linear-gradient(to bottom right, #7185bb, #cacaca, #fff6ed, #ececec, #dfe8ff, #ffffff);
+}
+
+.brewery-name {
+    font-size: 20px;
+    color: #254397;
+    text-align: center;
+    font-weight: 100;
+}
+
+.brewery-description {
+    margin-left: 2em;
+    font-size: 16px;
+}

@@ -1,0 +1,21 @@
+.random-page-title {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.btn-generate-random-brewery {
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    border: 1px solid #5e5e5e;
+}
+
+.btn-generate-random-brewery:hover {
+    border-width: 2px;
+    padding: 7px 13px;
+}
