@@ -6,17 +6,9 @@ import { fetchData } from "../../api/fetchData";
 export default function AllBrieweriesHome() {
     const [breweries, setBreweries] = useState<Brewery[]>([]);
     // create a constants file and put it there
-
+    
     useEffect(() => {
-        const res = fetchData();
-        console.log("RES", res);
-        setTimeout(() => { 
-            console.log("time pass");
-            console.log("RES", res);
-            // setBreweries(res);
-         }, 7000)
-        
-        // setBreweries(res);
+        fetchData().then(res => setBreweries(res));
     }, []);
 
     return (
